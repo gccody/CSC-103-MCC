@@ -1,0 +1,24 @@
+24) add, addAl, remove and untion would changed
+25) Use DoubleNode. Only params that are int need to be changed to double
+26) IntLinkedBag exercise = new IntLinkedBag();
+    exercise.add(42);
+    exercise.add(8);
+    System.out.println(exercise.grab());
+    System.out.println(exercise.size());
+27) Node methods
+28) p=p.getLink();
+    p=listSearch(p, d);
+    p=listSearch(p.getLink(), d);
+29) If target is not in bag the method will return 0
+30) Remove last value of the bag
+31) (int) (Math.random() * 21) - 10
+32) only remove, grab, and countOccurrences are linear
+33) the new and old bag share the same linked list
+34) private int total=3
+35) Check if sequence contains element. if no then return nothing. else set current element and remove
+36) the add methods both allocate more memory
+37) clone
+38) Array
+39) Linked list
+40) Doubly linked list
+41) O(n)
