@@ -41,3 +41,12 @@ It has both widening (obj = str;) and narrowing (str = (String) obj;)
 21) x==y is true if x and y are the same node x.data.equals(y.data) is true if the data is the same
 
 
+
+
+Part 2)
+public static <T> void printArray(T[] inputArray) {
+  for (T element : inputArray) {
+    System.out.print(((String )element) + " ");
+  }
+  System.out.println();
+}
