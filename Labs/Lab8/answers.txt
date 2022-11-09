@@ -1,0 +1,64 @@
+1)  first is decending order, second is accending, third is decending then accending
+2)  Hip
+    Hip
+    Hurrah
+3)  else {
+    cheers(n-1);
+    System.out.println("Hip");
+}
+
+System.out.println("Hip");
+cheers(n-1);
+System.out.println("Hip);
+
+if (n%2 == 0) {
+    System.out.println("Hip");
+}
+cheers(n-1);
+if (n%2 == 1) {
+    System.out.println("Hip");
+}
+
+4) public static void exercise4(int n) {
+    if (n > 0) {
+        System.out.print("*");
+        exercise4(n-1)'
+        System.out.print("!");
+    }
+}
+
+9) int digits(int n) {
+    if (n < 10 ) && (n > -10) {
+        return 1;
+    } else return 1 + digits(n/10);
+}
+
+10) all numbers with one digit are between -10 and 10. if the number is inbetween that range then return 1.
+
+1)  public static void print(int n, int end) {
+        if (n == end) return;
+        System.out.println("This was written by call number " + n + ".");
+        print(n+1, end);
+        System.out.println("This ALSO written by call number " + n + ".");
+    }
+
+5)  public static double sumover(int n) {
+        if (n == 1) return 1;
+        return (double) 1/n + sumover(n-1);
+    }
+
+8)  public static void writeLines(int lines) {
+        if (lines == 0) return;
+        writeLines(lines - 1);
+        for (int i = 0; i < lines; i++) System.out.print("*");
+        System.out.println();
+    }
+
+16) public static void binaryPrint(int n) {
+        if (n < 2) {
+            System.out.print(n);
+        } else {
+            binaryPrint(n / 2);
+            System.out.print(n % 2);
+        }
+    }
