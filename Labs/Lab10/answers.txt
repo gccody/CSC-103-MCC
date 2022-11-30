@@ -1,0 +1,69 @@
+Grant Cody
+
+1) Because heap is a complete binary tree
+2) using two separate arrays one for priority and one for data
+3) if smaller is swapped then the larger child has priority
+4)
+          10
+        /    \
+      9       6
+    /  \     /  \
+    7    8   2    5
+  /  \  /
+1    4 3  
+
+5) 
+      7
+    /    \
+   4       6
+ /  \     /  \
+1    3   2    5
+
+6) each node in a binary tree can only have at most 2 childred but in a b tree it can have more
+7) 400, 200, 401, 201
+8) 1,000,999 - 2,000,999
+9)  
+            4
+        /       \
+       2        6|8
+    /    \    /  |  \
+   1      3  5   7  9|10
+10)
+            4
+        /       \
+       2        6|9
+    /    \    /  |  \
+   1      3  5   7   10
+
+            6
+        /       \
+       4         9
+    /    \    /     \
+  1|2     5  7       10
+
+            5
+        /       \
+       2         9
+    /    \    /     \
+   1      4  7       10
+
+11) Allows a sub-tree to temp hold one too many entries. it is fixed by spliting the node and move nodes respectivly
+14) 5, 3, 2, 2, 0, 2
+15) the height is no more then logM n, where M is the MINIMUM
+16) 
+
+
+General Tree:
+Each node can have infinite children or nodes.
+
+Binary Tree:
+Each node can only have up to 2 childred
+
+Binary Search Tree:
+The left child of a node must be less then or equal to the parent and the right child must be greater then or equal to the parent
+
+Heaps:
+Can be slow but it is very flexible with memory
+
+B-Trees:
+Everything has data pointers
