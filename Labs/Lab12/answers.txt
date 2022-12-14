@@ -1,0 +1,71 @@
+1) Find the smallest element
+2) Every variable must be changed to type string
+4) quickSort(data, 222, 100);
+5) Mergesort makes recursive calls to sort subarrays that are the original array cut in half, O(nlogn)
+6) good splitting causes O(nlogn). bad splitting causes quadratic time
+7) We need to make sure the pivor element is near the median of the array values.
+8) check if n<-15. Yes, activate insertionsort. No, proceed as is in the original quicksort
+9) Change the heap rule so that the value in every node is less than or equal to its children.
+10) Arrays.sort(data, 0, 100);
+11) Arrays.sort(data, 42, 52);
+
+public int partition(int arr[], int low, int high)
+{
+    int pivot = arr[high];
+
+    int i = (low - 1);
+
+    for (int j = low; j <= high - 1; j++)
+    {
+        if (arr[j] < pivot)
+        {
+            i++;
+
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+    }
+
+    int temp = arr[i + 1];
+    arr[i + 1] = arr[high];
+    arr[high] = temp;
+
+    return i + 1;
+}
+
+
+public void makeHeap(int arr[], int n)
+{
+    // Build heap (rearrange array)
+    for (int i = n / 2 - 1; i >= 0; i--)
+        heapify(arr, n, i);
+}
+
+// To heapify a subtree rooted with node i which is
+// an index in arr[]. n is size of heap
+public void heapify(int arr[], int n, int i)
+{
+    int largest = i; // Initialize largest as root
+    int l = 2 * i + 1; // left = 2*i + 1
+    int r = 2 * i + 2; // right = 2*i + 2
+
+    // If left child is larger than root
+    if (l < n && arr[l] > arr[largest])
+        largest = l;
+
+    // If right child is larger than largest so far
+    if (r < n && arr[r] > arr[largest])
+        largest = r;
+
+    // If largest is not root
+    if (largest != i)
+    {
+        int swap = arr[i];
+        arr[i] = arr[largest];
+        arr[largest] = swap;
+
+        // Recursively heapify the affected sub-tree
+        heapify(arr, n, largest);
+    }
+}
